@@ -322,7 +322,7 @@ select {
 
 /* ----------------- Мобильная навигация ----------------- */
 .mobile__nav {
-    z-index: 1;
+    z-index: 99999;
     display:block;
     position: absolute;
     position: fixed;
