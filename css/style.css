@@ -807,7 +807,7 @@ box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
 box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
 }
 
-textarea {
+textarea.textarea {
 	border-radius: 0;
     -webkit-appearance: none;
 }
