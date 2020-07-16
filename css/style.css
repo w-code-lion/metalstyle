@@ -147,10 +147,6 @@ img{
 	margin-right: 0px;
 }
 
-.menu__list-item:hover {
-	transform: scale(1.1);
-}
-
 .menu__link {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -174,9 +170,6 @@ img{
 	transition: 0.2s;
 }
 
-.contact__item:hover {
-	transform: scale(1.1);
-}
 
 .block__seti {
 	display: flex;
