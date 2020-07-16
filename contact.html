@@ -109,11 +109,11 @@
 			    </ul>
     		</div>
             <h3 class="paragraph__form">Contact Form</h3>
-            <form action="" class="form">
-            	<input class="input" type="name" placeholder="Your name">
-            	<input class="input" type="email" placeholder="Your e-mail">
-            	<textarea class="textarea" name="text" placeholder="Your Message"></textarea>
-            	<button class="button">SEND</button>
+            <form action="" class="form" id="myform">
+            	<input class="input" type="name" name="name" id="inputName" placeholder="Your name">
+            	<input class="input" type="email" name="email" id="inputEmail" placeholder="Your e-mail">
+            	<textarea class="textarea" name="text" id="inputText" placeholder="Your Message"></textarea>
+            	<button class="button btn-default">SEND</button>
             </form>
             <div class="form__seti">
             	<a class="seti__black-link" href="#"><img class="seti__black-item" src="images/face-black.svg" alt=""></a>
@@ -144,9 +144,10 @@
 
 
 <script src="js/jquery.min.js"></script>
-<script src="slick/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/my-validate.js"></script>
 
 </body>
 </html>

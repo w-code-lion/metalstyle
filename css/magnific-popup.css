@@ -104,7 +104,7 @@
 .mfp-s-error .mfp-content {
   display: none; }
 
-/*button.mfp-close,
+button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
@@ -124,66 +124,27 @@ button::-moz-focus-inner {
   border: 0; }
 
 .mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 30px;
+  height: 30px;
+  /*line-height: 44px;*/
+  background-color: #000;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 3px;
   text-decoration: none;
   text-align: center;
   opacity: 1;
   padding: 0 0 18px 10px;
-  color: #fff;
   font-style: normal;
-  font-size: 52px;
-  font-family: Arial, Baskerville, monospace; }
-  .mfp-close:hover,
-  .mfp-close:focus {
-    opacity: 1; }
-  .mfp-close:active {
-    top: 1px; }
-
-.mfp-close-btn-in .mfp-close {
-  color: #000; }
-
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
-  color: #000;
-  right: -6px;
-  text-align: right;
-  padding-right: 6px;
-  width: 100%; }
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-button.mfp-close {
-  position: relative;
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  height: 26px;
-    width: 30px;
-  background: none;
   border:none;
   cursor: pointer;
-  font-size: 0;
+font-size: 0;
 }
-button.mfp-close::before {
+
+
+
+
+.mfp-close::before {
   position: absolute;
   left: 5px;
   top: 11px;
@@ -199,9 +160,8 @@ button.mfp-close::before {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-
 }
-button.mfp-close::after {
+.mfp-close::after {
   position: absolute;
   left: 5px;
   top: 11px;
@@ -221,11 +181,6 @@ button.mfp-close::after {
 
 
 
-@media (max-width: 768px) {
-  button.mfp-close {
-    right: 5px;
-  }
-}
 
 
 
@@ -236,6 +191,28 @@ button.mfp-close::after {
 
 
 
+
+
+
+
+
+
+  .mfp-close:hover,
+  .mfp-close:focus {
+    opacity: 1; }
+  .mfp-close:active {
+    top: 1px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #000; }
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  color: #000;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%; }
 
 .mfp-counter {
   position: absolute;
@@ -436,7 +413,7 @@ img.mfp-img {
 
 @media (max-width: 768px) {
   .mfp-close {
-    font-size: 40px;
+   
   }
 
   button.mfp-close, button.mfp-arrow {
