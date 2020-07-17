@@ -425,23 +425,21 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 .block__arrow {
     position: absolute;
     bottom: 13px;
-    left: -40px;
+    left: 178px;
     visibility: hidden;
 }
 
 .gallery__block:hover .block__arrow {
 	visibility:visible;
-	-webkit-transition:0.7s;
-	transition:0.7s;
-	-webkit-transform:translateX(230px);
-	transform:translateX(230px);
+	-webkit-transition:0.8s;
+	transition:0.8s;
+	-webkit-transform:translateX(25px);
+	transform:translateX(25px);
 }
-
-
 
 .arrow {
 	position: absolute;
-	left: -90px;
+	left: 115px;
 }
 
 .about {
@@ -635,18 +633,18 @@ a.link__down:hover {
 
 .decor__gallery-link:hover .block__arrow-two {
 	visibility:visible;
-	-webkit-transition:0.7s;
-	transition:0.7s;
-	-webkit-transform:translateX(230px);
-	transform:translateX(230px);
+	-webkit-transition:0.8s;
+	transition:0.8s;
+	-webkit-transform:translateX(25px);
+	transform:translateX(25px);
 }
 
 .decor__gallery-link:hover .arrow__two-decor {
 	visibility:visible;
-	-webkit-transition:0.7s;
-	transition:0.7s;
-	-webkit-transform:translateX(300px);
-	transform:translateX(300px);
+	-webkit-transition:0.8s;
+	transition:0.8s;
+	-webkit-transform:translateX(25px);
+	transform:translateX(25px);
 }
 
 .decor__gallery-link:hover::before {
@@ -714,7 +712,6 @@ margin-bottom: -34px;
 
 .spisok__contact {
 	list-style: none;
-	margin-left: 20px;
 }
 
 .contact__main {
@@ -724,9 +721,11 @@ margin-bottom: -34px;
 }
 
 .phone-black {
-    list-style-image: url(../images/phone-black.svg);
-    padding-left: 5px; 
-   }
+    background-image: url(../images/phone-black.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    padding-left: 23px;
+}
 
    .phone__black-link {
    	color: #000;
@@ -737,14 +736,18 @@ margin-bottom: -34px;
    }
 
 .gmail-black {
-    list-style-image: url(../images/email-black.svg); 
-    padding-left: 5px; 
-   }
+    background-image: url(../images/email-black.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 9px;
+    padding-left: 23px;
+}
 
 .marker-black {
-    list-style-image: url(../images/marker-black.svg); 
-    padding-left: 5px; 
-   }
+    background-image: url(../images/marker-black.svg);
+    background-repeat: no-repeat;
+    background-position: 1px 6px;
+    padding-left: 23px;
+}
 
 .paragraph__form {
 	margin: 0 0 15px 0;
@@ -777,10 +780,7 @@ input.input {
 
 input.input:focus {
 	outline: 0;
-	border-color: red;
-	-webkit-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
--moz-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
+	border-color: #227AFF;
 }
 
 .textarea {
@@ -801,10 +801,7 @@ box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
 
 .textarea:focus {
 	outline: 0;
-	border-color: red;
-	-webkit-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
--moz-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
-box-shadow: inset 0px 0px 10px -6px rgba(255,0,0,1);
+	border-color: #227AFF
 }
 
 textarea.textarea {
@@ -933,11 +930,9 @@ margin-bottom: -34px;
 	
 	}
 
-
 .mrc-btn-wrap {
 	display: inline-block;
-	margin: 12px 0;
-	padding: 0 10px;
+	width: 100%;
 }
 
 .mrc-shadow {
@@ -959,6 +954,7 @@ margin-bottom: -34px;
 .mrc-controls {
 	background: #000;
 	text-align: center;
+	position: relative;
 }
 
 .mrc-btn {
@@ -971,19 +967,45 @@ margin-bottom: -34px;
 	font-size: 0.6875em;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	background-image: url(../images/spoler-arrow.svg);
-	background-repeat: no-repeat;
-	background-position: 88px 5px;
-	width: 100px;
+	width: 100%;
+	padding: 12px 0;
+	position: relative;
 }
 
+.mrc-btn::before {
+	content: '';
+	width: 8px;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	top: 19px;
+	left: 50%;
+	margin-left: 43px;
+	transform: rotate(45deg);
+}
 
-.mrc-btn:focus {
-	background-image: url(../images/arrow-spoler.svg);
-	background-repeat: no-repeat;
-	background-position: 88px 5px;
+.mrc-btn::after {
+	content: '';
+	width: 8px;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	top: 19px;
+	left: 50%;
+	margin-left: 48px;
+	transform: rotate(-45deg);
+}
+
+.mrc-btn:focus::before {
+   transform: rotate(135deg);
+}
+
+.mrc-btn:focus::after {
+   transform: rotate(-135deg);
+   margin-left: 48px;
 	
 }
+
 
 .spoler__catalog {
 	display: flex;
@@ -1032,17 +1054,21 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 
 .block__arrow-two {
 	position: absolute;
-	bottom: 13px;
-	left: -40px;
+	bottom: 10px;
+	left: 170px;
 	visibility: hidden;
 }
 
 .spoler__gallery:hover .block__arrow-two {
 	visibility:visible;
-	-webkit-transition:0.7s;
-	transition:0.7s;
-	-webkit-transform:translateX(230px);
-	transform:translateY(X230px);
+	-webkit-transition:0.8s;
+	transition:0.8s;
+	-webkit-transform:translateX(25px);
+	transform:translateX(25px);
+}
+
+.arrow__two-decor {
+	left: 250px;
 }
 
 .popup {
@@ -1208,6 +1234,7 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	padding-bottom: 15px;
 }
 
 .spisok {
@@ -1222,22 +1249,37 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 }
 
 .phone {
-    list-style-image: url(../images/tel.svg);
-    padding-left: 5px; 
-   }
+    background-image: url(../images/tel.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+    padding-left: 23px;
+}
 
 .gmail {
-    list-style-image: url(../images/email.svg); 
-    padding-left: 5px; 
-   }
+    background-image: url(../images/email.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 9px;
+    padding-left: 23px;
+}
 
 .marker {
-    list-style-image: url(../images/marker.svg); 
-    padding-left: 5px; 
-   }
+    background-image: url(../images/marker.svg);
+    background-repeat: no-repeat;
+    background-position: 1px 6px;
+    padding-left: 23px;
+}
 
 
 .copy {
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	font-weight: 300;
+	font-size: 0.625em;
+}
+
+.made {
 	color: #fff;
 	position: absolute;
 	bottom: 0;
@@ -1256,6 +1298,27 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 .spoler__text {
     margin: 25px 0 25px 0;
 }
+
+.spoler__gallery:hover .block__arrow-two {
+    visibility: hidden;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.spoler__gallery:hover::before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 
 }
 
@@ -1586,11 +1649,14 @@ input.input {
 	.spisok {
 		margin-right: 0;
 		margin-top: 25px;
-		padding-left: 18px;
 	}
 
 	.copy {
 		left: -8px;
+	}
+
+	.made {
+		left: -38px;
 	}
 
 	.spoler__gallery {
@@ -1671,6 +1737,14 @@ input.input {
 }
 	.form__block {
     padding: 70px 10% 55px 3%;
+}
+
+.decor__gallery-link:hover .arrow__two-decor {
+    visibility: visible;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 }
 
