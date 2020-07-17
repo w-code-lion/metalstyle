@@ -1286,6 +1286,7 @@ box-shadow: inset 0px -58px 25px -12px rgba(0,0,0,0.4);
 	left: 0;
 	font-weight: 300;
 	font-size: 0.625em;
+	font-weight: 600;
 }
 
 @media (max-width: 1024px) {
