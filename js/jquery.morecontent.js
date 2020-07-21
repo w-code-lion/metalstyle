@@ -7,7 +7,7 @@
 	 */
 	var defaults = {
 
-		height: 295,
+		height: 335,
 		useCss: true,
 		speed: 350,
 		open: false,
