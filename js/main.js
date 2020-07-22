@@ -50,11 +50,9 @@ $(document).ready(function(){
   });
 
   $('.example').moreContent({
-    "shadow": true, // Добавляет в разметку блок с тенью
-    // Если нужно изменить разметку блока с тенью:
-    // tpl: {
-    //  shadow: '<div class="mrc-shadow"></div>'
-    // }
+    "shadow": true, 
+    
+ 
   });
 
 });
