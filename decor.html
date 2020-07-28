@@ -371,5 +371,29 @@
 
 <script src="js/main.js"></script>
 
+
+<script>
+    //////////////////////////////////////////
+    
+    var slick = $('.slider').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 700
+    });
+    
+
+    
+    //////////////////////////////////////////
+
+    $('.popup-link').magnificPopup();
+
+   $('.decor__gallery-link').click(function() {
+      slick.slick('refresh');
+   });
+</script>
+
 </body>
 </html>
