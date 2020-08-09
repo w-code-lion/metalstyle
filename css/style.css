@@ -428,6 +428,7 @@ margin-bottom: -32px;
 	left: 30px;
 	font-size: 1.5em;
 	font-weight: 900;
+	z-index: 1;
 }
 
 .gallery__block .i-arw-right-home {
@@ -1342,6 +1343,12 @@ margin-bottom: -34px;
 	font-weight: 600;
 }
 
+.dropdown {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: -4px;
+}
+
 @media (max-width: 1440px) {
 
      .container {
@@ -1527,6 +1534,12 @@ a.link__down:hover {
 
 .select {
 	margin-left: 10px;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: -4px;
 }
 
 .technology__block-text {
@@ -2154,26 +2167,6 @@ textarea.error {
 .mobile-nav--active {
     display: none;
 }
-}
-
-
-
-
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-.dropdown {
-    display: inline-block;
-    margin-top: -2px;
-    margin-left: 4px;
-}
-
-}
-
-.dropdown {
-    display: inline-block;
-    margin-left: 25px;
-    margin-top: -4px;
 }
 
 
