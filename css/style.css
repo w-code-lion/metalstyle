@@ -615,17 +615,18 @@ margin-bottom: -34px;
 	font-weight: 900;
 }
 
+
 .decor__down {
     background-color: #fff;
     border: 1px solid #000;
     background-image: url(../images/arrow-littel.svg);
     background-repeat: no-repeat;
-    background-position: 170px 13px;
     cursor: pointer;
     display: inline-block;
     -moz-transition: 0.2s;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    background-position: 95% 50%;
 }
 
 a.link__down {
@@ -634,7 +635,7 @@ a.link__down {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 14px 37px 13px 20px;
+    padding: 14px 33px 13px 20px;
     display: inline-block;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -650,6 +651,7 @@ a.link__down:hover {
 	color: #fff;
 	text-decoration: none;
 }
+
 
 .decor__gallery {
 	display: flex;
@@ -1027,24 +1029,21 @@ margin-bottom: -34px;
 }
 
 .mrc-btn::after {
-	content: '';
-	width: 8px;
-	height: 8px;
-	margin: -5px 0 0 45px;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	position: absolute;
-	top: 17px; 
-	left: 50%;
-	transform: rotate(-45deg);
-	transition: .3s;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px 2px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    transition: .3s;
 }
 
 .open .mrc-btn::after {
-   transform: rotate(135deg);
-   margin-top: 0;
+    transform: rotate(135deg);
+    margin-bottom: -3px;
 }
-
 
 .spoler__catalog {
 	display: flex;
@@ -1346,7 +1345,7 @@ margin-bottom: -34px;
 .dropdown {
     display: inline-block;
     margin-left: 25px;
-    margin-top: -4px;
+    margin-top: -2px;
 }
 
 @media (max-width: 1440px) {
@@ -1446,6 +1445,17 @@ a.link__down:hover {
     opacity: 0;
 }
 
+
+.block__seti-link {
+	-moz-transition:0s;
+	-webkit-transition:0s;
+	transition: 0s;
+}
+
+.block__seti-link:hover {
+	transform: scale(1);
+}
+
 }
 
 @media (max-width: 1024px) {
@@ -1539,7 +1549,7 @@ a.link__down:hover {
 .dropdown {
     display: inline-block;
     margin-left: 0;
-    margin-top: -4px;
+    margin-top: -2px;
 }
 
 .technology__block-text {
