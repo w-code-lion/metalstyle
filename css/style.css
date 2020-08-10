@@ -173,9 +173,6 @@ img{
 
 .block__seti-link {
 	margin-right: 15px;
-	-moz-transition:0.2s;
-	-webkit-transition:0.2s;
-	transition: 0.2s;
 }
 
 .block__seti-link:hover {
@@ -318,14 +315,14 @@ select {
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
-    top: -305px;
+    top: -330px;
     left: -15px;
 }
 
 .mobile-nav--active {
   left: -15px;
   position: absolute;
-  transform: translateY(365px);
+  transform: translateY(378px);
 }
 
 .header-slider {
@@ -388,7 +385,9 @@ margin-bottom: -32px;
 	margin-bottom: 30px;
 	overflow: hidden;
 }
-
+.gallery__block img {
+	object-fit: cover;
+}
 .gallery__block::after {
 	content: '';
 	position: absolute;
@@ -416,6 +415,11 @@ margin-bottom: -32px;
 
 }
 
+.gallery__block img {
+    width: 100%;
+    height: 100%;
+}
+
 .gallery__foto-link {
 	height: 100%;
 	width: 100%;
@@ -425,7 +429,7 @@ margin-bottom: -32px;
 	position: absolute;
 	bottom: 4px;
 	color: #fff;
-	left: 30px;
+	left: 5px;
 	font-size: 1.5em;
 	font-weight: 900;
 	z-index: 1;
@@ -445,7 +449,7 @@ margin-bottom: -32px;
 .spoler__gallery-info {
 	width: 1005px;
 	position: absolute;
-	bottom: 15px;
+	bottom: 10px;
 	left: 30px;
 }
 .decor__gallery-text {
@@ -719,6 +723,9 @@ a.link__down:hover {
 	width: 100%;
 }
 
+.decor__gallery-link img {
+	object-fit: cover;
+}
 
 .i-arw-right {
 	display: inline-block;
@@ -1106,6 +1113,12 @@ margin-bottom: -34px;
 	opacity: 1;
 }
 
+.spoler__gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .spoler__foto-link {
 	height: 100%;
 	width: 100%;
@@ -1148,7 +1161,7 @@ margin-bottom: -34px;
 }
 
 .slider__text-top {
-	margin-bottom: 55%;
+	margin-bottom: 25%;
 }
 
 .slide__top-paragraph {
@@ -1456,6 +1469,12 @@ a.link__down:hover {
 	transform: scale(1);
 }
 
+.technology__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 }
 
 @media (max-width: 1024px) {
@@ -1647,13 +1666,17 @@ a.link__down:hover {
     .mobile__nav-list {
     	padding-left: 15px;
     	list-style: none;
-    	margin-bottom: 50px;
+    	margin-bottom: 35px;
     }
 
     .mobile-nav__item {
     	margin-bottom: 17px;
     }
 
+    .mobile-nav__item:last-child {
+   margin-top: 50px;
+   margin-bottom: 0;
+}
 
     .mobile-nav__link {
 	text-decoration: none;
@@ -1664,6 +1687,10 @@ a.link__down:hover {
 
 .mobile-nav__link:hover {
 	text-decoration: none;
+}
+
+.mobile-nav__item, .menu__link {
+	font-size: 0.86em;
 }
 
 
@@ -1976,6 +2003,7 @@ input.input {
 .decor__gallery-link {
     height: 190px;
 }
+
 }
 
 
@@ -2001,6 +2029,7 @@ input.input {
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
+
 }
 
 

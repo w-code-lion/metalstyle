@@ -30,6 +30,12 @@ $(document).ready(function(){
 	]
   });
 
+  rThisSlider.slick({
+//параметры
+}).on('setPosition', function (event, slick) {
+  slick.$slides.css('height', slick.$slideTrack.find("img").height() + 'px');
+});
+
   // Popup slickSlider
   var slick = $('.slider').slick({
 	  infinite: true,
