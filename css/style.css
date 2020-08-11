@@ -437,7 +437,7 @@ margin-bottom: -32px;
 }
 
 .gallery__block .i-arw-right-home {
-	transition: .5s;
+	transition: .7s;
 	transform: translateX(-10px);
 	opacity: 0;
 	margin-left: 15px;
@@ -704,7 +704,7 @@ a.link__down:hover {
 }
 
 .decor__gallery-link .i-arw-right {
-	transition: .5s;
+	transition: .7s;
 	transform: translateX(-10px);
 	opacity: 0;
 	margin-left: 15px;
@@ -1090,7 +1090,7 @@ margin-bottom: -34px;
 	    box-shadow: inset 22px -74px 11px -30px rgba(0,0,0,0.7);
 }
 .spoler__gallery .i-arw-right {
-	transition: .5s;
+	transition: .7s;
 	transform: translateX(-10px);
 	opacity: 0;
 	margin-left: 15px;
