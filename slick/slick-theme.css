@@ -184,8 +184,8 @@
     height: 20px;
     content: '__';
     text-align: center;
-    color: #777777;
-    opacity: 1;
+    color: #fff;
+    opacity: .5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
