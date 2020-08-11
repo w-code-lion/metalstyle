@@ -337,6 +337,7 @@ select {
 .header-slider img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 	padding-bottom: 20px;
 }
 
@@ -1145,9 +1146,11 @@ margin-bottom: -34px;
 	width: 64.2%;
 }
 
-.slider__item {
-	
+.slider__item img {
+	object-fit: cover;
+	width: 100%; height: 100%;
 }
+
 
 .popup-img {
 	height: 750px;
@@ -1914,8 +1917,13 @@ input.input {
 }
 
 @media (max-width: 555px) {
-	.slider__item img {
-	width: 100%;
+.slider-home {
+	position: relative;
+	height: 550px;
+}
+.slider-home img {
+	object-fit: cover;
+	width: 100%; height: 100%;
 }
 
 .header__sculptures {
@@ -1938,12 +1946,14 @@ input.input {
 
 .header-slider {
      padding-top: 0; 
+     height: 550px;
+     overflow: hidden;
 }
 
 .slider-text {
     position: absolute;
     left: 0;
-    bottom: 19px;
+    bottom: 0;
     width: 100%;
     z-index: 3;
 }
@@ -2004,6 +2014,11 @@ input.input {
     height: 190px;
 }
 
+.paragraph__bottom {
+    font-size: 3.125em;
+    margin-bottom: -4px;
+}
+
 }
 
 
@@ -2028,6 +2043,11 @@ input.input {
     transition: 0.7s;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+}
+
+.paragraph__bottom {
+    font-size: 3.125em;
+    margin-bottom: 76px;
 }
 
 }

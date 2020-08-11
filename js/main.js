@@ -9,11 +9,12 @@ $(document).ready(function(){
 	  menuToggle.classList.toggle('menu-icon-active');
 	  mobileNavContainer.classList.toggle('mobile-nav--active');
   }
-  
 
-  // Header slickSlider
+ // Header slickSlider
 
-  $('.header-slider-block').slick({
+  var headerSlider = $('.header-slider-block');
+
+  headerSlider.slick({
 	infinite: true,
 	arrows: false,
 	dots: true,
@@ -24,19 +25,19 @@ $(document).ready(function(){
 	  {
 		breakpoint: 555,
 		settings: {
-		  dots: false
+		  dots: false,
+
 		}
 	  }
 	]
   });
 
-  rThisSlider.slick({
-//параметры
-}).on('setPosition', function (event, slick) {
-  slick.$slides.css('height', slick.$slideTrack.find("img").height() + 'px');
-});
+  // rThisSlider.slick().on('setPosition', function (event, slick) {
+  //   slick.$slides.css('height', slick.$slideTrack.find("img").height() + 'px');
+  // });
 
-  // Popup slickSlider
+
+   // Popup slickSlider
   var slick = $('.slider').slick({
 	  infinite: true,
 	  arrows: true,
@@ -60,7 +61,5 @@ $(document).ready(function(){
   $('.example').moreContent({
 	"shadow": true 
   });
-
-
-
+ 
 });
