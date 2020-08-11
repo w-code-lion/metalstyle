@@ -1709,10 +1709,6 @@ a.link__down:hover {
 	text-decoration: none;
 }
 
-.mobile-nav__item, .menu__link {
-	font-size: 0.86em;
-}
-
 
  .mobile__header-contact {
     	padding-left: 15px;
